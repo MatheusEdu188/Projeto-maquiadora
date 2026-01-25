@@ -18,6 +18,13 @@
   
 }
 
+#nav-itens-desktop{
+  display: none;
+  gap: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 #pincel{
   width: 10px;
   height: 20px;
@@ -218,3 +225,101 @@ a{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
+
+#nav-btn-agendar-itens{
+    font-size: 20px;
+    background-color: rgb(163, 0, 163);
+    padding: 1rem;
+    text-align: center;
+    width: 180px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    left: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+
+.agendar-btn-nav{
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  #menu-toggle{
+    display: none;
+  }
+
+  nav{
+    width: 100%;
+    height: 7%;
+    
+    
+    flex-wrap: nowrap;
+  }
+
+
+  #nav-itens-desktop{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    width: 75%;
+    justify-content: flex-end;
+  }
+
+
+  
+  
+  .li-nav-itens-desktop{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    padding: 1%;
+    transition: ease-in 0.2s;
+    
+  }
+  
+  .li-nav-itens-desktop:hover{
+    cursor: pointer;
+    background-color: beige;
+  }
+
+  #nav-btn-agendar{
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    transition: ease-in 0.2s;
+  }
+
+  #nav-btn-agendar:hover{
+    background-color: rgb(223, 0, 223);
+    
+    
+  }
+
+  .tituloNavBar{
+    margin-left: 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    color: rgb(196, 0, 196);
+    font-family: "Dancing Script", cursive;
+    
+}
+
+
+
+
+
+.oo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+}
+

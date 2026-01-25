@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,17 +42,51 @@
                 <li class="li-nav-itens"><a href=""><img class="nav-itens-logo" src="./assets/img/sobreicon.png" alt="">Sobre <span class="mq-nav-itens">></span></a></li>
                 <li class="li-nav-itens"><a href=""><img class="nav-itens-logo" id="pincel" src="./assets/img/pincel.png" alt="">Serviços <span class="mq-nav-itens">></span></a></li>
 
-                <li ><a id="menu-li-btn" href="https://wa.me/5583994132681?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário."
-            target="_blank"
-            rel="noopener">Agendar Horário</a></li>
+
+            <li id="nav-btn-agendar-itens" class="agendar-btn-nav" >Agendar Horário</li>
             <span id="desc-btn">Atendimento Personalizado com hora marcada</span>
             <span id="localizacao-menu">Localização <br> <br> Av. Paulista, 1000 - São Paulo, SP
             </span>
             </ul>
 
-            <a  id="nav-btn-agendar" href="https://wa.me/5583994132681?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário."
-            target="_blank"
-            rel="noopener">Agendar Horário</a>
+
+
+
+
+
+
+
+
+
+
+            <ul id="nav-itens-desktop">
+                
+                
+                <li class="li-nav-itens-desktop"><a class="oo" href="">Inicio </a></li>
+                <li class="li-nav-itens-desktop"><a class="oo" href="">Sobre </a></li>
+                <li class="li-nav-itens-desktop"><a class="oo" href="">Serviços </a></li>
+                <li id="nav-btn-agendar" class="agendar-btn-nav" >Agendar Horário</li>
+                
+
+            
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </nav>
@@ -72,20 +107,76 @@
             </figure>
             <div id="textos-apresentacao">
                 <h3 class="titulo-apresentacao">Maquiadora</h3>
-                <h2>Me Chamo <span class="nome-aysla">Aysla Barreto!</span></h2>
+                <h2 id="titulo-nome-aysla">Me Chamo <span class="nome-aysla">Aysla Barreto!</span></h2>
                 <p class="descricao-conteudos">Sou maquiadora especialista em noivas. <br> Transformando Sonhos em Beleza Atemporal e Momentos Inesqueciveis.</p>
                 <div id="botoes-apresentacao">
-                    <a id="btn-reservar"   href="https://wa.me/5583994132681?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário."
-            target="_blank"
-            rel="noopener">Reservar Data</a>
+                    <span id="btn-reservar" class="agendar-btn-nav" >Reservar Data</span>
                     <a id="btn-servicos" href="">Ver Serviços</a>
                 </div>
 
 
             </div>
         </section>
+<div id="modal-container" class="modal-hidden">
+    <div id="modal">
+        <div class="header-modal">
+            <h2 class="titulo-modal">Qual seu tipo de maquiagem?</h2>
+            <span class="fechar-modal">X</span>
+    
+
+        </div>
+
+        <form class="modal-agendar" action="">
+
+            
+            
+
+            <div class="grupo-radio">
+                
+                <label class="radio-custom" for="noiva">
+                    <input class="input-modal-form" type="radio" name="tipo" id="noiva" value="noiva">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="./assets/img/homepageimg/icons/anelIcon.png" alt="">Noiva</span>
+                </label>
+
+                
+                <label class="radio-custom" for="social">
+                    <input class="input-modal-form" type="radio" name="tipo" id="social" value="social">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="./assets/img/homepageimg/icons/carinhaFeliz.png" alt="">
+                        Social
+                    </span>
+                </label>
+                <label class="radio-custom" for="debutante">
+                    <input class="input-modal-form" type="radio" name="tipo" id="debutante" value="debutante">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="./assets/img/homepageimg/icons/debutante.png" alt="">
+                        Debutante
+                    </span>
+                </label>
+            </div>
+            <div id="radio-horario">
+                <label for="horaio" id="titulo-horario">Horário de Preferencia:</label>
+                <input type="date" id="horario" min="" max="" name="horario" required>
+
+            </div>
 
 
+            <label id="titulo-input" for="nome-usuario">Digite seu nome:</label>
+            <input 
+                type="text" 
+                id="nome-usuario" 
+                name="nome-usuario" 
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <button id="btn-enviar-modal" class="agendar-btn">Enviar</button>
+            <p id="desc-modal-form">Faremos uma pequena estilização para o seu Atendimento.</p>
+
+        </form>
+    </div>
+</div>
         <article class="article-conteudo-secundario">
             
             <h3 class="titulo-apresentacao">A Artista</h3>
@@ -119,9 +210,9 @@
                 <h2 id="titulo-banner">Pronta Para Ser Atendida?</h2>
                 <p id="descricao-banner">A Agenda de 2026 está aberta. Garanta Já o Seu Horário com quem entende a importancia da beleza.</p>
             </div>
-            <a id="btn-agendar-banner"   href="https://wa.me/5583994132681?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário."
+            <span id="btn-agendar-banner" class="agendar-btn-nav"   href="https://wa.me/5583994132681?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário."
             target="_blank"
-            rel="noopener">Agendar Agora</a>
+            rel="noopener">Agendar Agora</span>
         </article>
 
     </main>
@@ -144,5 +235,6 @@
     </footer>
 
     <script src="./js/index.js"></script>
+    <script src="./js/agendamento.js"></script>
 </body>
 </html>
