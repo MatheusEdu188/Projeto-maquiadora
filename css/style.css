@@ -347,6 +347,77 @@ main{
 
 
 
+  /*articles secundários styles*/
+
+
+  .descricao-conteudos{
+    font-size: 20px;
+    line-height: 28px;
+    width: 600px;
+  }
+
+
+  .conteudo-article{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+
+  #topico-article{
+    font-size: 25px;
+  }
+
+
+  /*valores article*/
+  #valores-article{
+    gap: 100px;
+    margin-bottom: 100px;
+
+  }
+
+  .valores{
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .titulo-valores{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .descricao-valores{
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+
+  /*banner agendar article*/
+  .banner-article-agendar{
+    width: 700px;
+    height: 400px;
+  }
+
+  #titulo-banner{
+    font-size: 30px;
+
+  }
+
+  #descricao-banner{
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
 
 
 

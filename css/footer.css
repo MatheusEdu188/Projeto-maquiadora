@@ -69,3 +69,42 @@ footer{
     font-size: 5px;
     font-family: 'Roboto', sans-serif;
 }
+
+
+@media (min-width: 1024px){
+    footer{
+        height: 250px;
+    }
+
+    .sobre-footer{
+        width: 200px;
+
+    }
+
+    .titulo-sobre-footer{
+        font-size: 25px;
+    }
+
+    .text-footer{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    .titulo-local-footer{
+        font-size: 25px;
+    }
+
+    .text-footer{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .local-footer{
+        width: 200px;
+    }
+
+    .copyright-texto{
+        font-size: 10px;
+    }
+}
