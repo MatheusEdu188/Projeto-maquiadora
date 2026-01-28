@@ -379,6 +379,11 @@ main{
   .valores{
     width: 300px;
     height: 300px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .valores:hover{
+    transform: scale(1.1);
   }
 
 
@@ -410,6 +415,18 @@ main{
     width: 500px;
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+
+  #btn-agendar-banner{
+    padding: 15px 40px 15px 40px;
+    font-size: 15px;
+    transition: ease-in 0.2s;
+  }
+
+  #btn-agendar-banner:hover{
+    background-color: rgb(163, 0, 163);
+    color: white;
+    cursor: pointer;
   }
 
 

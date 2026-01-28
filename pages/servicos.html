@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="stylesheet" href="../css/padronizacoes.css">
+    
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+        <header>
+        <nav>
+             <button id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <h1 class="tituloNavBar">Aysla Barreto Make-Up</h1>
+            
+            <ul id="nav-itens">
+                <ul>
+                    <h2 class="tituloNavBar" id="titulo-itens">Aysla Barreto Make-Up</h2>
+                    <li id="btn-fechar-itens">X</li>   
+                </ul>
+                <li id="titulo-menu">Menu Principal</li>
+                <li class="li-nav-itens"><a href="../index.html"><img class="nav-itens-logo" src="./assets/img/homeicon.png" alt="">Inicio <span class="mq-nav-itens">></span></a></li>
+                <li class="li-nav-itens"><a href=""><img class="nav-itens-logo" src="./assets/img/sobreicon.png" alt="">Sobre <span class="mq-nav-itens">></span></a></li>
+                <li class="li-nav-itens"><a href=""><img class="nav-itens-logo" id="pincel" src="./assets/img/pincel.png" alt="">Serviços <span class="mq-nav-itens">></span></a></li>
+
+
+            <li id="nav-btn-agendar-itens" class="agendar-btn-nav" >Agendar Horário</li>
+            <span id="desc-btn">Atendimento Personalizado com hora marcada</span>
+            <span id="localizacao-menu">Localização <br> <br> R. Padre Belizio, 523 - Alagoa Grande, PB
+            </span>
+            </ul>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            <ul id="nav-itens-desktop">
+                
+                
+                <li class="li-nav-itens-desktop"><a href="">Inicio</a></li>|
+                <li class="li-nav-itens-desktop"><a href="">Sobre </a></li>|
+                <li class="li-nav-itens-desktop"><a href="">Serviços</a></li>|
+                <li id="nav-btn-agendar" class="agendar-btn-nav" >Agendar Horário</li>
+                
+
+            
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <main>
+
+
+        <section id="carrosel-imagens"> 
+            <button id="btn-voltar">&#10094;</button>
+            <div>
+                <img class="img-carrosel" src="../assets/img/carrosel/maq1.jpg" alt="">
+            </div>
+            <button id="btn-avancar">&#10095;</button>
+        </section>
+
+
+
+
+        <article class="conteudos">
+            <h2 class="titulos-sem-enfase">Menu de Experiencias</h2>
+            <h2 class="titulo-com-enfase">Experiencias</h2>
+            <aside class="valores">
+                <h3 class="titulo-com-enfase">Debutante</h3>
+                <p class="descricao-conteudos">Maquiagem completa para debutantes, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>
+            </aside>
+            <aside class="valores">
+                <h3 class="titulo-com-enfase">Social</h3>
+                <p class="descricao-conteudos">Maquiagem completa para eventos sociais, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>     
+            </aside>
+
+            <aside class="valores">
+                <h3 class="titulo-com-enfase">Noiva</h3>
+                <p class="descricao-conteudos">Maquiagem completa para noivas, com foco em realçar a beleza natural e criar um visual elegante para o dia da cerimônia.</p>     
+            </aside>
+        </article>
+
+
+        <article class="conteudos" id="conteudo-busca">
+            <h2 class="titulos-sem-enfase" >Busque Agora</h2>
+            <h2 class="titulo-com-enfase" id="titulo-pesquisa">Selecione o Tipo de Maquiagem que Deseja Buscar</h2>
+            <div id="escolhas-make">
+                <button data-tipo="noiva" class="opcao-make" id="opcao-noiva">
+                    <img class="img-opcao-make" src="../assets/img/homepageimg/icons/anelIcon.png" alt="">
+                    <h3 class="titulo-opcao-make">Noiva</h3>
+                </button>
+                <button data-tipo="social" class="opcao-make" id="opcao-social">
+                    <img class="img-opcao-make" src="../assets/img/homepageimg/icons/carinhaFeliz.png" alt="">
+                    <h3 class="titulo-opcao-make">Social</h3>
+                </button>
+                <button data-tipo="debutante" class="opcao-make" id="opcao-debutante">
+                    <img class="img-opcao-make" src="../assets/img/homepageimg/icons/debutante.png" alt="">
+                    <h3 class="titulo-opcao-make">Debutante</h3>
+                </button>
+            </div>
+            <div class="container-pesquisa">
+                
+            </div>
+        </article>
+
+
+
+        <div class="conteudo-article">
+                <div>
+                    <h2 id="titulo-com-enfase">Mais do Que Maquiagem</h2>
+                    <p class="descricao-conteudos">Mais do que cores e pincéis, maquiagem é expressão. É a liberdade de ser quem você é hoje — e quem quiser ser amanhã. É autoestima no espelho, coragem no olhar e identidade em cada detalhe. <br>Não é esconder, é revelar. Não é padrão, é escolha. Porque beleza não se limita ao rosto: ela começa dentro, se reflete fora e ganha forma quando você se reconhece. Maquiagem é arte, cuidado, atitude.</p>
+
+                </div>
+                <div class="container-img-article">
+                    <img class="img-article-1" id="img1-article" src="../assets/img/MAKE_0405.jpg" alt="">
+                    <img class="img-article-1" id="img2-article" src="../assets/img/maquiagem-1515011476963_v2_4x3.jpg" alt="">
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="modal-container" class="modal-hidden">
+    <div id="modal">
+        <div class="header-modal">
+            <h2 class="titulo-modal">Qual seu tipo de maquiagem?</h2>
+            <span class="fechar-modal">X</span>
+    
+
+        </div>
+
+        <form class="modal-agendar" action="">
+
+            
+            
+
+            <div class="grupo-radio">
+                
+                <label class="radio-custom" for="noiva">
+                    <input class="input-modal-form" type="radio" name="tipo" id="noiva" value="noiva">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="../assets/img/homepageimg/icons/anelIcon.png" alt="">Noiva</span>
+                </label>
+
+                
+                <label class="radio-custom" for="social">
+                    <input class="input-modal-form" type="radio" name="tipo" id="social" value="social">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="../assets/img/homepageimg/icons/carinhaFeliz.png" alt="">
+                        Social
+                    </span>
+                </label>
+                <label class="radio-custom" for="debutante">
+                    <input class="input-modal-form" type="radio" name="tipo" id="debutante" value="debutante">
+                    <span class="checkmark">
+                        <img class="img-icon-form" src="../assets/img/homepageimg/icons/debutante.png" alt="">
+                        Debutante
+                    </span>
+                </label>
+            </div>
+            <div id="radio-horario">
+                <label for="horaio" id="titulo-horario">Horário de Preferencia:</label>
+                <input type="date" id="horario" min="" max="" name="horario" required>
+
+            </div>
+
+
+            <label id="titulo-input" for="nome-usuario">Digite seu nome:</label>
+            <input 
+                type="text" 
+                id="nome-usuario" 
+                name="nome-usuario" 
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <button id="btn-enviar-modal" class="agendar-btn">Enviar</button>
+            <p id="desc-modal-form">Faremos uma pequena estilização para o seu Atendimento.</p>
+
+        </form>
+    </div>
+</div>
+    </main>
+
+
+
+    <footer>
+        <aside class="info-footer">
+            <div class="sobre-footer">
+                <h2 class="titulo-sobre-footer">Aysla Barreto</h2>
+                <p class="text-footer">Especialista em Realçar Sua Beleza Com Tecnicas Avançadas.</p>
+            </div>
+            <div class="local-footer">
+                <h2 class="titulo-local-footer">Localização</h2>
+                <p class="text-footer">R. Padre Belizio, 523 - Alagoa Grande, PB</p>
+            </div>
+        </aside>
+        <div class="copyright-footer">
+            <p class="copyright-texto">©Aysla Mirelli Make-Up - Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+    <script src="../js/agendamento.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/servicos.js"></script>
+    
+</body>
+</html>

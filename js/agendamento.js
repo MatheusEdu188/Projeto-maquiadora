@@ -20,7 +20,7 @@ btn.forEach(button => {
 -Data: ${data}`;
 
 
-        const url = `https://wa.me/83991403460?text=${encodeURIComponent(msg)}`;
+        const url = `https://wa.me/5583991403460?text=${encodeURIComponent(msg)}`;
 
         window.open(url, '_blank');
     })
