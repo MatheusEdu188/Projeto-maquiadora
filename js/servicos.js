@@ -174,6 +174,40 @@ btnPesquisas.forEach(btn => {
         const pesquisaSelecionada = pesquisa.filter(item => item.tipo === tipoSelecionado);
 
         gerarPesquisa(pesquisaSelecionada)
+        
     })
 })
 
+
+
+const modalContainer = document.querySelector('.modal-hidden-servicos')
+const modalImagens = document.getElementById('modal-imagens');
+
+
+
+
+
+containerPesquisa.addEventListener('click', (event)=>{
+    const img = event.target.closest('.imgPesquisa')
+
+    if(!img)return;
+
+    modalImagens.innerHTML = '';
+
+    const imgModal = document.createElement('img')
+    imgModal.classList.add('img-modal-pesquisa')
+
+    imgModal.src = img.src;
+    
+    modalImagens.appendChild(imgModal)
+
+    modalContainer.style.display = 'flex'
+    
+})
+
+modalContainer.addEventListener('click', ()=>{
+    modalContainer.style.display = 'none';
+    imgModal.classList.remove('img-modal-pesquisa');
+    
+
+})

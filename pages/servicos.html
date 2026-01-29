@@ -74,7 +74,7 @@
             <ul id="nav-itens-desktop">
                 
                 
-                <li class="li-nav-itens-desktop"><a href="">Inicio</a></li>|
+                <li class="li-nav-itens-desktop"><a href="../index.html">Inicio</a></li>|
                 <li class="li-nav-itens-desktop"><a href="">Sobre </a></li>|
                 <li class="li-nav-itens-desktop"><a href="">Serviços</a></li>|
                 <li id="nav-btn-agendar" class="agendar-btn-nav" >Agendar Horário</li>
@@ -115,7 +115,7 @@
 
         <section id="carrosel-imagens"> 
             <button id="btn-voltar">&#10094;</button>
-            <div>
+            <div id="div-img-carrosel">
                 <img class="img-carrosel" src="../assets/img/carrosel/maq1.jpg" alt="">
             </div>
             <button id="btn-avancar">&#10095;</button>
@@ -126,20 +126,23 @@
 
         <article class="conteudos">
             <h2 class="titulos-sem-enfase">Menu de Experiencias</h2>
-            <h2 class="titulo-com-enfase">Experiencias</h2>
-            <aside class="valores">
-                <h3 class="titulo-com-enfase">Debutante</h3>
-                <p class="descricao-conteudos">Maquiagem completa para debutantes, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>
-            </aside>
-            <aside class="valores">
-                <h3 class="titulo-com-enfase">Social</h3>
-                <p class="descricao-conteudos">Maquiagem completa para eventos sociais, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>     
-            </aside>
+            <h2 class="titulo-com-enfase" id="titulo-conteudo-valores">Experiencias</h2>
+            <div id="container-valores">
+                <aside class="valores">
+                    <h3 class="titulo-com-enfase">Debutante</h3>
+                    <p class="descricao-conteudos">Maquiagem completa para debutantes, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>
+                </aside>
+                <aside class="valores">
+                    <h3 class="titulo-com-enfase">Social</h3>
+                    <p class="descricao-conteudos">Maquiagem completa para eventos sociais, com foco em realçar a beleza natural e criar um visual elegante para a ocasião.</p>     
+                </aside>
+    
+                <aside class="valores">
+                    <h3 class="titulo-com-enfase">Noiva</h3>
+                    <p class="descricao-conteudos">Maquiagem completa para noivas, com foco em realçar a beleza natural e criar um visual elegante para o dia da cerimônia.</p>     
+                </aside>
 
-            <aside class="valores">
-                <h3 class="titulo-com-enfase">Noiva</h3>
-                <p class="descricao-conteudos">Maquiagem completa para noivas, com foco em realçar a beleza natural e criar um visual elegante para o dia da cerimônia.</p>     
-            </aside>
+            </div>
         </article>
 
 
@@ -161,22 +164,33 @@
                 </button>
             </div>
             <div class="container-pesquisa">
+                <h2 class="titulo-com-enfase" id="result-busca">
+                    Resultados para a busca...
+                </h2>
+                
                 
             </div>
         </article>
 
 
 
-        <div class="conteudo-article">
+        <div class="conteudo-article" id="article-final">
                 <div>
-                    <h2 id="titulo-com-enfase">Mais do Que Maquiagem</h2>
-                    <p class="descricao-conteudos">Mais do que cores e pincéis, maquiagem é expressão. É a liberdade de ser quem você é hoje — e quem quiser ser amanhã. É autoestima no espelho, coragem no olhar e identidade em cada detalhe. <br>Não é esconder, é revelar. Não é padrão, é escolha. Porque beleza não se limita ao rosto: ela começa dentro, se reflete fora e ganha forma quando você se reconhece. Maquiagem é arte, cuidado, atitude.</p>
+                    <h2 class="titulo-com-enfase">Mais do Que Maquiagem</h2>
+                    <p class="descricao-conteudos" id="descricao-article-final">Mais do que cores e pincéis, maquiagem é expressão. É a liberdade de ser quem você é hoje — e quem quiser ser amanhã. É autoestima no espelho, coragem no olhar e identidade em cada detalhe. <br>Não é esconder, é revelar. Não é padrão, é escolha. Porque beleza não se limita ao rosto: ela começa dentro, se reflete fora e ganha forma quando você se reconhece. Maquiagem é arte, cuidado, atitude.</p>
 
                 </div>
                 <div class="container-img-article">
                     <img class="img-article-1" id="img1-article" src="../assets/img/MAKE_0405.jpg" alt="">
                     <img class="img-article-1" id="img2-article" src="../assets/img/maquiagem-1515011476963_v2_4x3.jpg" alt="">
                 </div>
+        </div>
+
+
+        <div class="modal-hidden-servicos">
+            <div id="modal-imagens">
+
+            </div>
         </div>
 
 
@@ -190,7 +204,7 @@
 
 
 <div id="modal-container" class="modal-hidden">
-    <div id="modal">
+    <div class="modal">
         <div class="header-modal">
             <h2 class="titulo-modal">Qual seu tipo de maquiagem?</h2>
             <span class="fechar-modal">X</span>
