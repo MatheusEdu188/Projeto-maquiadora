@@ -93,6 +93,14 @@
 
 /*conteudos*/
 
+
+#container-valores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #titulo-pesquisa{
     text-align: center;
 }
@@ -298,6 +306,7 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        flex-direction: row;
     }
 
     .valores{
