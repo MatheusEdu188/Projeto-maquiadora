@@ -108,7 +108,7 @@ nav{
     font-size: 25px;
     margin-bottom: 40px;
     font-weight: 600;
-    color: rgb(31, 31, 31);
+    color: rgb(27, 27, 27);
     word-spacing: 3px;
 }
 
@@ -131,17 +131,20 @@ a{
 }
 
 #btn-fechar-itens{
-  list-style-type: none;
   position: relative;
-  top: 20px;
-  left: 75%;
-  font-size: 20px;
+  text-align: center;
+  left: 78%;
+  list-style-type: none;
+  top: 15px;
+  width: 25px;
+  font-size: 35px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  
   border-radius: 25px;
-  padding: 5px;
-  color: rgb(145, 85, 105);
+  
+  color: rgb(255, 255, 255);
 }
+
 
 #menu-li-btn{
   display: flex;
