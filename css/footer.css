@@ -1,10 +1,9 @@
 footer{
-    background-color: rgb(156, 95, 117);
+    background-color: rgb(145, 85, 105);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .info-footer{
@@ -16,20 +15,15 @@ footer{
     font-size: 7px;
     gap: 80px;
     margin-top: 20px;
-    border-bottom: 0.5px solid rgb(129, 129, 129);
+    border-bottom: 0.5px solid rgb(210, 190, 200);
     border-width: thin;
     width: 90%;
     padding-bottom: 20px;
-    
-    
-    
 }
-
 
 .sobre-footer{
     width: 100px;
 }
-
 
 .local-footer{
     width: 100px;
@@ -40,35 +34,31 @@ footer{
     font-size: 6px;
 }
 
-
 .copyright-texto{
-    color: rgb(216, 216, 216);
+    color: rgb(235, 225, 230);
 }
-
 
 .titulo-sobre-footer{
     font-size: 10px;
     margin-bottom: 5px;
-    color: white;
+    color: rgb(255, 245, 250);
     font-family: 'Roboto', sans-serif;
 }
 
 .titulo-local-footer{
     font-size: 10px;
     margin-bottom: 5px;
-    color: white;
+    color: rgb(255, 245, 250);
     font-family: 'Roboto', sans-serif;
 }
 
-
 .text-footer{
-    color: white;
+    color: rgb(245, 235, 240);
     font-weight: 300;
     line-height: 10px;
     font-size: 5px;
     font-family: 'Roboto', sans-serif;
 }
-
 
 @media (min-width: 1024px){
     footer{
@@ -77,26 +67,22 @@ footer{
 
     .sobre-footer{
         width: 200px;
-
     }
 
     .titulo-sobre-footer{
         font-size: 25px;
+        color: rgb(255, 245, 250);
     }
 
     .text-footer{
         font-size: 12px;
         line-height: 20px;
+        color: rgb(245, 235, 240);
     }
-
 
     .titulo-local-footer{
         font-size: 25px;
-    }
-
-    .text-footer{
-        font-size: 12px;
-        line-height: 20px;
+        color: rgb(255, 245, 250);
     }
 
     .local-footer{
@@ -105,5 +91,6 @@ footer{
 
     .copyright-texto{
         font-size: 10px;
+        color: rgb(235, 225, 230);
     }
 }

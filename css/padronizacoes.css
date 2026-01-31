@@ -1,76 +1,78 @@
 *{
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
     background-color: rgb(246, 222, 255);
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* TEXTOS */
 
 #textos{
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  text-align: start;
-  padding: 10px;
+  padding: 15px;
+  max-width: 800px;
 }
 
-
 .titulos-sem-enfase{
-  font-family: 'playfair display', serif;
-  font-size: 15px;
-  letter-spacing: 3px;
-  margin-bottom: 5px;
-  color: rgb(133, 0, 133);
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 6px;
+  color: rgb(150, 80, 160);
+  text-transform: uppercase;
 }
 
 .titulo-com-enfase{
-    font-family: 'playfair display', serif;
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: rgb(50, 50, 50);
-
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: rgb(45, 45, 45);
+    line-height: 1.2;
 }
 
 .nome-enfase{
-  color: rgb(133, 0, 133);
-  font-family: 'playfair display', serif;
+  color: rgb(150, 80, 160);
+  font-family: 'Playfair Display', serif;
 }
-
-
 
 .descricao-conteudos{
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  margin-top: 10px;
-  line-height: 20px;
-  color: rgb(90, 90, 90);
+  font-size: 15px;
+  margin-top: 12px;
+  line-height: 1.6;
+  color: rgb(85, 85, 85);
 }
 
-
-
-
-/*conteudos*/
-
+/* CONTEÚDOS */
 
 .conteudos{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 30px 20px;
+    margin-bottom: 60px;
 }
 
+/* CAIXA DE VALORES */
 
 .valores{
     padding: 40px;
     background-color: white;
-    width: 70%;
+    width: 75%;
     margin-bottom: 40px;
-    border-radius: 10px;
-
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.valores:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
